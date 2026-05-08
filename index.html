@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hemal Mewantha — AI/ML Engineer & Data Science Researcher</title>
+    <meta name="description" content="Portfolio of Hemal Mewantha — final-year Data Science undergraduate at University of Colombo, building production-ready AI systems, RAG pipelines, multi-agent assistants, and ML platforms." />
+    <meta property="og:title" content="Hemal Mewantha — AI/ML Engineer Portfolio" />
+    <meta property="og:description" content="AI/ML engineer building intelligent, production-ready systems — RAG, agentic AI, NL2SQL, and multimodal deep learning research." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- =========================================================
+         NAVBAR
+         ========================================================= -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#about" class="nav-logo" aria-label="Hemal Mewantha home">
+                <span class="nav-logo-mark">HM</span>
+                <span>Hemal Mewantha</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =========================================================
+         HERO / ABOUT
+         ========================================================= -->
+    <section id="about" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-status">
+                        <span class="pulse"></span>
+                        <span>Open to Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-name">
+                        Hi, I'm <span class="gradient-text">Hemal Mewantha</span>
+                    </h1>
+
+                    <div class="hero-tagline" aria-live="polite">
+                        <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        I'm a final-year Data Science undergraduate at the University of Colombo, Faculty of Science,
+                        specialising in building intelligent, production-ready AI systems. My work spans the full AI
+                        lifecycle — from data pipelines and model development through to deployment, evaluation, and
+                        monitoring in real-world environments.
+                    </p>
+
+                    <p class="hero-bio">
+                        I've built AI-powered applications including multi-agent recommendation systems, financial LLM
+                        assistants, RAG pipelines with measurable latency improvements, and NL2SQL medical analytics
+                        platforms. I'm actively applying for AI/ML engineering roles where I can build systems that
+                        work beyond the notebook — in production, at scale.
+                    </p>
+
+                    <div class="badge-row">
+                        <span class="badge">Python</span>
+                        <span class="badge">Machine Learning</span>
+                        <span class="badge">Deep Learning</span>
+                        <span class="badge">LLMs</span>
+                        <span class="badge">RAG</span>
+                        <span class="badge">Agentic AI</span>
+                        <span class="badge">LangGraph</span>
+                        <span class="badge">GCP</span>
+                        <span class="badge">AWS</span>
+                        <span class="badge">Airflow</span>
+                        <span class="badge">Terraform</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">FastAPI</span>
+                    </div>
+
+                    <div class="hero-links">
+                        <a href="https://github.com/hemalmewan" target="_blank" rel="noopener" class="btn" aria-label="GitHub profile">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/hemalmewantha" target="_blank" rel="noopener" class="btn" aria-label="LinkedIn profile">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:mewanmuna2000@gmail.com" class="btn" aria-label="Send email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="Hemal_Mewantha.pdf" download class="btn btn-primary" aria-label="Download resume PDF">
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <canvas id="neural-canvas"></canvas>
+                    <div class="profile-frame">
+                        <div class="profile-ring"></div>
+                        <img
+                            src="user_profile.jpeg"
+                            alt="Hemal Mewantha"
+                            class="profile-image"
+                            id="profile-image"
+                            onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';"
+                        />
+                        <div class="profile-fallback" id="profile-fallback">HM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         EXPERIENCE
+         ========================================================= -->
+    <section id="experience">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 02 — Experience</span>
+                <h2 class="section-title">Where I've Worked</h2>
+                <p class="section-subtitle">Hands-on research and engineering experience building real-world data and ML systems.</p>
+            </header>
+
+            <div class="timeline">
+                <article class="timeline-entry reveal">
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                            <span><i class="fas fa-map-marker-alt"></i> On-site</span>
+                            <span><i class="far fa-calendar"></i> Oct 2025 – Apr 2026</span>
+                        </div>
+                        <h3 class="timeline-role">Data Science Research Intern</h3>
+                        <div class="timeline-org">International Water Management Institute (IWMI) · Battaramulla, Western Province, Sri Lanka</div>
+                        <ul class="timeline-bullets">
+                            <li>Analysed geospatial climate data using raster and NetCDF formats to support global climate trend studies.</li>
+                            <li>Developed an R package for computing ETCCDI climate indices and performing Mann-Kendall trend analysis.</li>
+                            <li>Built an interactive R Shiny dashboard to visualise climate trends and precipitation indices across multiple regions.</li>
+                            <li>Applied statistical modelling and hypothesis testing for hydrological and climate data analysis.</li>
+                            <li>Contributed to the Hydrology Climate Trend Analysis Project with data-driven insights.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-pill">Geospatial Analysis</span>
+                            <span class="tech-pill">R Programming</span>
+                            <span class="tech-pill">R Package Development</span>
+                            <span class="tech-pill">R Shiny</span>
+                            <span class="tech-pill">Statistical Modelling</span>
+                            <span class="tech-pill">NetCDF</span>
+                            <span class="tech-pill">Raster Data</span>
+                        </div>
+                        <a href="https://github.com/hemalmewan/Climate-Trend-R-package" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECTS
+         ========================================================= -->
+    <section id="projects">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 03 — Projects</span>
+                <h2 class="section-title">Things I've Built</h2>
+                <p class="section-subtitle">Production-grade AI systems, ML platforms, and data pipelines — designed for real users, not just notebooks.</p>
+            </header>
+
+            <div class="filter-tabs reveal" role="tablist" aria-label="Project filter">
+                <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-tab" data-filter="ai" role="tab" aria-selected="false">AI &amp; LLM</button>
+                <button class="filter-tab" data-filter="ml" role="tab" aria-selected="false">Machine Learning</button>
+                <button class="filter-tab" data-filter="de" role="tab" aria-selected="false">Data Engineering</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- PROJECT 1 — Prime Land (Real Estate) -->
+                <article class="project-card reveal" data-category="ai">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-house-chimney"></i></div>
+                        <span class="project-category">AI &amp; LLM</span>
+                    </div>
+                    <h3 class="project-title">Prime Land AI Assistant — RAG-Based Intelligent QA System</h3>
+                    <div class="project-date">Feb 2026 – Mar 2026</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">RAG</span>
+                        <span class="tech-pill">CAG</span>
+                        <span class="tech-pill">CRAG</span>
+                        <span class="tech-pill">Qdrant</span>
+                        <span class="tech-pill">Playwright</span>
+                        <span class="tech-pill">Python</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Built an end-to-end real estate assistant using advanced RAG with a scalable web crawling and semantic chunking pipeline.</li>
+                                <li>Implemented a hybrid retrieval architecture combining Semantic Caching (CAG) and Corrective RAG (CRAG) for improved accuracy and efficiency.</li>
+                                <li>Integrated confidence scoring and dynamic retrieval expansion with re-ranking to handle low-confidence queries.</li>
+                                <li>Designed a modular, scalable LLM pipeline validated across 100 test queries.</li>
+                            </ul>
+                            <div class="metrics-box">
+                                <div class="metrics-title">Key Metrics</div>
+                                <ul class="metrics-list">
+                                    <li><span>Cache Hit Rate</span><strong>21%</strong></li>
+                                    <li><span>Latency Improvement</span><strong>82.85%</strong></li>
+                                    <li><span>Avg RAG Latency</span><strong>9.5s → 1.6s</strong></li>
+                                    <li><span>Cost Saved</span><strong>$0.0252/run</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Prime-Land-AI-Assistant" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 — Kapruka Gift -->
+                <article class="project-card reveal" data-category="ai">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-gift"></i></div>
+                        <span class="project-category">AI &amp; LLM</span>
+                    </div>
+                    <h3 class="project-title">Kapruka Gift Recommendation Assistant — Multi-Agent System</h3>
+                    <div class="project-date">Mar 2026 – Apr 2026</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">OpenAI GPT</span>
+                        <span class="tech-pill">Embeddings</span>
+                        <span class="tech-pill">Qdrant Cloud</span>
+                        <span class="tech-pill">Playwright</span>
+                        <span class="tech-pill">Tavily</span>
+                        <span class="tech-pill">RAG</span>
+                        <span class="tech-pill">Multi-agent</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Designed an AI-driven gift recommendation system using multi-agent architecture and RAG, delivering personalised suggestions from 10,000+ scraped product records.</li>
+                                <li>Built multi-agent orchestration: Catalog Agent (RAG retrieval), Logistics Agent (delivery validation), Reflection Agent (Draft → Critique → Revise loop).</li>
+                                <li>Implemented multi-layer memory: short-term conversation context, semantic user preferences, and long-term RAG product knowledge.</li>
+                                <li>Engineered an intelligent routing engine classifying user intent and extracting key entities for accurate agent activation.</li>
+                                <li>Used a Judge LLM to aggregate multi-agent outputs into a single coherent response.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Gift-AI-Assistant" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 — Research Assistant -->
+                <article class="project-card reveal" data-category="ai">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-flask"></i></div>
+                        <span class="project-category">AI &amp; LLM</span>
+                    </div>
+                    <h3 class="project-title">AI-Powered Research Assistant — RAG, ReAct &amp; Reflection Agents</h3>
+                    <div class="project-date">Mar 2026 – Mar 2026</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">RAG</span>
+                        <span class="tech-pill">Agentic AI</span>
+                        <span class="tech-pill">LLMs</span>
+                        <span class="tech-pill">LLM-as-a-Judge</span>
+                        <span class="tech-pill">FastAPI</span>
+                        <span class="tech-pill">Qdrant</span>
+                        <span class="tech-pill">Streamlit</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Developed an end-to-end AI research assistant combining RAG, ReAct reasoning, and a reflection-based improvement loop for accurate, structured responses.</li>
+                                <li>Integrated internal knowledge retrieval (Qdrant) with real-time web search (Tavily API) for static and dynamic information needs.</li>
+                                <li>Reflection agent iteratively critiques and refines ReAct responses; LLM-as-a-Judge measures completeness, accuracy, clarity, actionability, and safety.</li>
+                                <li>Deployed via FastAPI (backend) and Streamlit (frontend) with metrics dashboards for latency, token usage, cost, and quality scores.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Research-AI-Agent" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4 — Financial AI -->
+                <article class="project-card reveal" data-category="ai">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-coins"></i></div>
+                        <span class="project-category">AI &amp; LLM</span>
+                    </div>
+                    <h3 class="project-title">Financial AI Assistant — Domain-Adapted LLM</h3>
+                    <div class="project-date">Jan 2026 – Feb 2026</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">LLaMA 3 8B</span>
+                        <span class="tech-pill">QLoRA</span>
+                        <span class="tech-pill">PEFT</span>
+                        <span class="tech-pill">RAG</span>
+                        <span class="tech-pill">ROUGE-L</span>
+                        <span class="tech-pill">LLM-as-a-Judge</span>
+                        <span class="tech-pill">Python</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Fine-tuned LLaMA 3 8B Instruct on Uber's financial and regulatory disclosures for domain-adapted financial Q&amp;A.</li>
+                                <li>Integrated a Hybrid RAG pipeline combining semantic vector retrieval with document-grounded generation to reduce hallucination on numerical data.</li>
+                                <li>Conducted a structured hallucination audit revealing common failure modes in numeric reasoning, demonstrating how retrieval grounding improves precision.</li>
+                                <li>Evaluated using ROUGE-L, LLM-as-a-Judge scoring, and latency benchmarking for production feasibility assessment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/AI-Assistant-For-Financial" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5 — Medicore -->
+                <article class="project-card reveal" data-category="ai">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <span class="project-category">AI &amp; LLM</span>
+                    </div>
+                    <h3 class="project-title">Medicore — AI-Powered Medical Analytics (NL2SQL)</h3>
+                    <div class="project-date">Apr 2026 – Apr 2026</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">OOP</span>
+                        <span class="tech-pill">Supabase</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Langfuse</span>
+                        <span class="tech-pill">FastAPI</span>
+                        <span class="tech-pill">Guardrails</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Built an AI-driven medical analytics platform enabling doctors and analysts to query healthcare data using natural language instead of SQL.</li>
+                                <li>NL2SQL engine converts questions like "Show revenue trends" or "Top doctors by patients" into SQL queries with intelligent chart-type selection (bar, line, pie, table).</li>
+                                <li>Includes monitoring: total runs, token cost, average latency, query history tracking via Langfuse observability.</li>
+                                <li>Built-in security: guardrails protection, ambiguity handling with refinement prompts, three-attempt query refinement limit.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Multi-Agent-NL2SQL-Platform" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6 — ME/CFS Classifier -->
+                <article class="project-card reveal" data-category="ml">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <span class="project-category">Machine Learning</span>
+                    </div>
+                    <h3 class="project-title">ML-Based Diagnostic Classifier for ME/CFS &amp; Depression</h3>
+                    <div class="project-date">Jul 2025 – Aug 2025</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Streamlit</span>
+                        <span class="tech-pill">FastAPI</span>
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">Jenkins</span>
+                        <span class="tech-pill">SHAP</span>
+                        <span class="tech-pill">SVC</span>
+                        <span class="tech-pill">ANN</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Developed an advanced ML system classifying patients with ME/CFS, Depression, or both using clinical and psychological data.</li>
+                                <li>Conducted in-depth EDA with multicollinearity checks, FAMD, clustering, and Fisher Discriminant Analysis (FDA) to explore decision boundaries.</li>
+                                <li>Selected SVC as best-performing classifier; applied SHAP for model interpretability in a healthcare context.</li>
+                                <li>Identified Depression Score and Post-Exertional Malaise as key predictors of ME/CFS and Depression overlap.</li>
+                                <li>Deployed as a complete ML product: Streamlit + FastAPI, containerised with Docker, CI/CD automated via Jenkins.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Data-Analysis-Project" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 7 — Sentiment / Stock -->
+                <article class="project-card reveal" data-category="de">
+                    <div class="project-head">
+                        <div class="project-icon"><i class="fas fa-newspaper"></i></div>
+                        <span class="project-category">Data Engineering</span>
+                    </div>
+                    <h3 class="project-title">Sentiment Analysis on News Headlines &amp; Stock Market Data</h3>
+                    <div class="project-date">Aug 2025 – Sep 2025</div>
+
+                    <div class="project-tech">
+                        <span class="tech-pill">GCP</span>
+                        <span class="tech-pill">Vertex AI</span>
+                        <span class="tech-pill">n8n</span>
+                        <span class="tech-pill">BigQuery</span>
+                        <span class="tech-pill">Airflow</span>
+                        <span class="tech-pill">Terraform</span>
+                        <span class="tech-pill">NLP</span>
+                        <span class="tech-pill">Looker Studio</span>
+                    </div>
+
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <ul class="project-bullets">
+                                <li>Built a real-time data pipeline ingesting stock prices and news headlines for 10 global companies via Finnhub API, automated with n8n.</li>
+                                <li>Performed sentiment analysis on news headlines using Vertex AI; loaded results and stock details into BigQuery for structured analysis.</li>
+                                <li>Orchestrated data pipelines and scheduled jobs using Apache Airflow (Cloud Composer).</li>
+                                <li>Designed interactive dashboards in Looker Studio for real-time insight visualisation.</li>
+                                <li>Provisioned all cloud infrastructure (GCS, BigQuery, Cloud Composer) using Terraform as Infrastructure as Code.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="btn details-toggle" aria-expanded="false">
+                            <i class="fas fa-chevron-down"></i> <span class="toggle-label">View Details</span>
+                        </button>
+                        <a href="https://github.com/hemalmewan/Group-D-Big-Data-Project" target="_blank" rel="noopener" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         RESEARCH
+         ========================================================= -->
+    <section id="research">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 04 — Research</span>
+                <h2 class="section-title">Undergraduate Research</h2>
+                <p class="section-subtitle">My final-year research project — a multimodal deep learning system targeting low-resource emotion recognition with edge deployment in mind.</p>
+            </header>
+
+            <article class="research-card reveal">
+                <span class="research-badge"><i class="fas fa-flask"></i> Research</span>
+                <h3 class="research-title">Multimodal Emotion Recognition System</h3>
+                <div class="research-meta">Undergraduate Research Project · University of Colombo</div>
+
+                <div class="research-tech-label">Core Technologies</div>
+                <div class="project-tech">
+                    <span class="tech-pill">Deep Learning</span>
+                    <span class="tech-pill">Multimodal AI</span>
+                    <span class="tech-pill">Active Learning (UBAL)</span>
+                    <span class="tech-pill">Model Quantization</span>
+                    <span class="tech-pill">Edge AI</span>
+                    <span class="tech-pill">Computer Vision</span>
+                    <span class="tech-pill">Audio Processing</span>
+                    <span class="tech-pill">Grad-CAM</span>
+                </div>
+
+                <ul class="research-bullets">
+                    <li>Developed a dual-branch neural network combining facial features (MTCNN) and audio features (Log-Mel Spectrograms) for emotion recognition on a Sinhala video dataset.</li>
+                    <li>Integrated Grad-CAM interpretability to analyse and visualise visual vs. audio feature contributions, improving model transparency and prediction understanding.</li>
+                    <li>Investigated model quantization strategies for Edge AI deployment, targeting inference optimisation on resource-constrained devices.</li>
+                    <li>Explores Active Learning (UBAL) to improve data efficiency in low-resource multimodal settings.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         SKILLS
+         ========================================================= -->
+    <section id="skills">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 05 — Skills</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">The tools, frameworks, and platforms I use to ship AI/ML systems end-to-end.</p>
+            </header>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">🤖</span>
+                    <h3 class="skill-title">AI / Machine Learning</h3>
+                    <div class="project-tech">
+                        <span class="tech-pill">Machine Learning</span>
+                        <span class="tech-pill">Deep Learning</span>
+                        <span class="tech-pill">NLP</span>
+                        <span class="tech-pill">LLM Fine-tuning</span>
+                        <span class="tech-pill">RAG Pipelines</span>
+                        <span class="tech-pill">Agentic AI</span>
+                        <span class="tech-pill">Multi-agent Systems</span>
+                        <span class="tech-pill">Prompt Engineering</span>
+                        <span class="tech-pill">Computer Vision</span>
+                        <span class="tech-pill">LLM Evaluation</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">🧰</span>
+                    <h3 class="skill-title">Frameworks &amp; Libraries</h3>
+                    <div class="project-tech">
+                        <span class="tech-pill">LangGraph</span>
+                        <span class="tech-pill">LangChain</span>
+                        <span class="tech-pill">HuggingFace</span>
+                        <span class="tech-pill">PyTorch</span>
+                        <span class="tech-pill">TensorFlow</span>
+                        <span class="tech-pill">Scikit-learn</span>
+                        <span class="tech-pill">FastAPI</span>
+                        <span class="tech-pill">Streamlit</span>
+                        <span class="tech-pill">Pandas</span>
+                        <span class="tech-pill">NumPy</span>
+                        <span class="tech-pill">SHAP</span>
+                        <span class="tech-pill">Playwright</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">☁️</span>
+                    <h3 class="skill-title">Cloud &amp; MLOps</h3>
+                    <div class="project-tech">
+                        <span class="tech-pill">GCP</span>
+                        <span class="tech-pill">AWS</span>
+                        <span class="tech-pill">Apache Airflow</span>
+                        <span class="tech-pill">Terraform</span>
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">Docker Compose</span>
+                        <span class="tech-pill">Jenkins</span>
+                        <span class="tech-pill">Langfuse</span>
+                        <span class="tech-pill">MLflow</span>
+                        <span class="tech-pill">CI/CD</span>
+                        <span class="tech-pill">Vertex AI</span>
+                        <span class="tech-pill">BigQuery</span>
+                        <span class="tech-pill">Cloud Composer</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">💻</span>
+                    <h3 class="skill-title">Languages &amp; Data</h3>
+                    <div class="project-tech">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">R</span>
+                        <span class="tech-pill">SQL</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Bash</span>
+                        <span class="tech-pill">REST APIs</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Supabase</span>
+                        <span class="tech-pill">Qdrant</span>
+                        <span class="tech-pill">Vector Databases</span>
+                        <span class="tech-pill">NetCDF</span>
+                        <span class="tech-pill">Raster Data</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         EDUCATION
+         ========================================================= -->
+    <section id="education">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 06 — Education</span>
+                <h2 class="section-title">Academic Background</h2>
+                <p class="section-subtitle">Specialised in Data Science with a strong focus on statistical modelling, ML, and applied research.</p>
+            </header>
+
+            <div class="education-card reveal">
+                <div class="university-logo" aria-label="University of Colombo">UoC</div>
+                <div>
+                    <h3 class="education-degree">B.Sc. (Hons) in Data Science</h3>
+                    <div class="education-school">Department of Statistics, Faculty of Science — University of Colombo, Sri Lanka</div>
+                    <div class="education-dates">2021 – Present</div>
+
+                    <div class="gpa-badge">
+                        <i class="fas fa-award"></i> GPA: 3.82 / 4.00 · First Class
+                    </div>
+
+                    <div class="education-section">
+                        <div class="education-section-label">Key Modules</div>
+                        <div class="education-modules">
+                            <span class="tech-pill">Machine Learning</span>
+                            <span class="tech-pill">Statistical Modelling</span>
+                            <span class="tech-pill">Deep Learning</span>
+                            <span class="tech-pill">NLP</span>
+                            <span class="tech-pill">Data Engineering</span>
+                            <span class="tech-pill">Probability &amp; Statistics</span>
+                            <span class="tech-pill">Research Methods</span>
+                        </div>
+                    </div>
+
+                    <div class="education-section">
+                        <div class="education-section-label">Final-Year Project</div>
+                        <p class="education-fyp">
+                            Multimodal Emotion Recognition System — dual-branch neural network for Sinhala audio-visual
+                            dataset using MTCNN, Log-Mel Spectrograms, Grad-CAM, and Edge AI quantization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+    <section id="contact">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="section-eyebrow">// 07 — Contact</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have a role in mind, a research idea, or just want to chat about AI? My inbox is open.</p>
+            </header>
+
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <p class="contact-cta">
+                        I'm actively looking for AI/ML engineering roles. If you're building something interesting —
+                        or just want to talk AI — feel free to drop a message.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <a href="mailto:mewanmuna2000@gmail.com">
+                                <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                                <span>mewanmuna2000@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hemalmewantha" target="_blank" rel="noopener">
+                                <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                                <span>linkedin.com/in/hemalmewantha</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hemalmewan" target="_blank" rel="noopener">
+                                <span class="contact-icon"><i class="fab fa-github"></i></span>
+                                <span>github.com/hemalmewan</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="Hemal_Mewantha.pdf" download class="btn btn-primary" aria-label="Download resume PDF">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <div class="contact-card reveal">
+                    <h3 class="skill-title" style="margin-bottom: 8px;">Drop a Message</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 20px;">
+                        I usually respond within a day or two.
+                    </p>
+
+                    <!-- IMPORTANT: replace YOUR_FORM_ID with your actual Formspree endpoint to enable real submissions -->
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+    <footer>
+        <div class="container">
+            © 2026 Hemal Mewantha · Built with <span class="heart">❤</span> and lots of Python
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent! I'll get back to you soon 🚀</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
